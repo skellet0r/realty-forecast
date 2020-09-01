@@ -1,8 +1,18 @@
-name: [Insert Project Name]
+name: realty-forecast
 channels:
   - defaults
   - conda-forge
 dependencies:
+  - jupyter
+  - jupyter_contrib_nbextensions
+  - pandas
+  - scipy
+  - numpy
+  - statsmodels
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - plotly
   - pip
   - pip:
     - -e ./

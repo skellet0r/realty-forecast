@@ -1,1 +1,10 @@
+pandas
+scipy
+numpy
+statsmodels
+scikit-learn
+matplotlib
+seaborn
+plotly
 -e ./
+
