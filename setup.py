@@ -17,6 +17,7 @@ setuptools.setup(
         "matplotlib",
         "seaborn",
         "plotly",
+        "pmdarima",
     ],
 )
 

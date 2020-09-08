@@ -3,6 +3,7 @@ channels:
   - defaults
   - conda-forge
 dependencies:
+  - python=3.6.10
   - jupyter
   - jupyter_contrib_nbextensions
   - pandas
@@ -16,4 +17,5 @@ dependencies:
   - pip
   - pip:
     - -e ./
+    - pmdarima
 
