@@ -21,7 +21,6 @@ a short term time horizon.
 
 ## Business Problem
 
-<Business problem and exact use case(s), why it matters\>
 The business problem our client is facing is, the market they are in is saturated with competition, seeking to expand their portfolio in other regions
 they are looking to identify profitable investments in markets outside of their foothold. The client has a sizeable portion of capital available to invest
 in other markets, but wants to be in a market with relatively lower risk, yet still maintain a high return on investment.
@@ -39,6 +38,17 @@ we then performed out of sample walk forward validation to get an insight into o
 
 Our results for each of the 61 models can be inspected in our 4th notebook, but of the top 5 models we chose, our RMSE scores for all were below ~\$60k.
 
+|     | ZipCode |     RMSE | Historic Median Value | Proj. Min (12m) | Proj. Max (12m) | Proj. Min Net Profit | Proj. Max Net Profit |
+| --: | ------: | -------: | --------------------: | --------------: | --------------: | -------------------: | -------------------: |
+|   1 |   80203 | 15,517.8 |             \$571,500 |       \$632,029 |       \$707,771 |           \$60,529.4 |            \$136,271 |
+|   2 |   80218 | 28,192.7 |             \$773,400 |       \$868,125 |       \$961,875 |           \$94,725.4 |            \$188,475 |
+|   3 |   80211 | 29,628.8 |             \$546,600 |       \$592,347 |       \$644,853 |           \$45,746.9 |           \$98,253.1 |
+|   4 |   80220 | 31,763.1 |             \$561,100 |       \$609,286 |       \$664,114 |           \$48,186.1 |            \$103,014 |
+|   5 |   80212 | 49,685.4 |             \$510,000 |       \$571,192 |       \$628,808 |           \$61,192.4 |            \$118,808 |
+
+Our top 5 zip codes also had very good predictive accuracy as shown in tests, and with an RMSE score below our projected min profits, 
+with a 95% confidence level, we can forecast that the future prices will be within the range predicted.
+
 ## Learnings
 
 ### Data science / Engineering
@@ -54,7 +64,6 @@ The further you project into the future the more your model's predictive ability
 
 ### What's unique about this project, specific challenges
 
-<Specific issues or setup, unique things, specific challenges that had to be addressed during the engagement and how that was accomplished\>
 The project is unique in that we were given an open ended question and given free reign to determine what it meant. We were tasked with
 identifying the 5 best zip codes and as such their is a subjective nature to the term 'best'. Best is different depending on the circumstances, and the
 financial situation of the client asking.
